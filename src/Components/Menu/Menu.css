@@ -1,0 +1,67 @@
+.menu{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 50px;
+  left: 0px;
+  transform: translate(-130%);
+  transition: all 0.4s;
+  z-index: 10;
+}
+
+.menu.active {
+  transform: translate(0);
+}
+.blur {
+  width: 100vw;
+  height: 100vh;
+  z-index: 8;
+  left: 21%;
+  backdrop-filter: blur(2px);
+  position: absolute;
+}
+
+.menu_content {
+  width: 20%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2C2F48;
+  transition: all 0.4s;
+  border-right: 1px solid #01B7C5;
+}
+
+.Cards, .Numbers, .Verbs, .Text{
+  margin-top: 5vh;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+img{
+  width: 20px;
+}
+
+.cardsSettings{
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  
+  /* justify-content: space-around; */
+}
+
+.labelCheckBoxInput{
+  margin: 10px;
+}
+.checkBoxInput{
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu_content {
+    width: 100%;
+  }
+  .blur {
+    backdrop-filter: none;
+  }
+}
