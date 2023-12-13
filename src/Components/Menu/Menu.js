@@ -14,7 +14,7 @@ function Menu({items, active, setMenuActive, updateCardContent}) {
             <div className='cardsSettings'>
 
               <label className='labelCheckBoxInput' htmlFor="1" onClick={updateCardContent}> Verbs
-                  <input className='checkBoxInput' type="checkbox" name="verbs" id="Verbs" checked/>
+                  <input className='checkBoxInput' type="checkbox" name="verbs" id="Verbs"/>
               </label>
 
               <label className='labelCheckBoxInput' htmlFor="2" onClick={updateCardContent}> Words
