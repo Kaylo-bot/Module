@@ -2,8 +2,6 @@
 .Content{
   margin-top: 10vh;
   display: flex;
-
-  /* align-content: center; */
   height: 80vh;
 }
 

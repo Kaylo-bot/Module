@@ -9,7 +9,7 @@ import './CardsComponents.css';
 
 
 const CardsComponents = ({randomWord, onChangeSide, id, isFlipped}) => {
-  const { word, translate, text,} = randomWord;
+  const { word, translate, text, wort, partizipII} = randomWord;
 
   return (
 
@@ -41,8 +41,14 @@ const CardsComponents = ({randomWord, onChangeSide, id, isFlipped}) => {
             <div className='slide-header'></div>
 
               <div className='slide-body'>
-                <div className='word'>{`${word} - ${translate}`}</div>
-                <div className='text'>{text}</div>
+                <div className='backword'>{`${word} - ${translate}`}</div>
+                <div className='text'>
+                  <ul>
+                  {wort.map((element, index) => (
+                    <li key={index}>{`${Object.keys(element)[0]}  -  ${Object.values(element)[0]}`}</li>))}
+                  </ul>
+                </div>
+                <div className='pastword'>{`Partizip II : ${partizipII}`}</div>
               </div>
 
               <div className='slide-footer'>
